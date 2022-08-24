@@ -1,0 +1,1 @@
+# Autotesting WebUI by JAVA
