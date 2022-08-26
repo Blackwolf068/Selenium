@@ -1,0 +1,94 @@
+{
+  "id": "c06f9446-46a7-47b5-b644-ad1e1ecf6924",
+  "version": "2.0",
+  "name": "HomeWork1 Selenium IDE",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "aec983a7-751f-4268-85f0-46194ed30e7e",
+    "name": "add to cart test",
+    "commands": [{
+      "id": "6f3cf6ce-4de4-4633-8587-db0bafe57f3d",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d1c6ab1-1a62-4376-820d-6e68ecec32a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1613x997",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79110b62-9750-4e54-8ff1-ead8f1d955c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "954c31cb-5b30-425d-9de8-ea26f5997139",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "dress"
+    }, {
+      "id": "aa1e4593-0956-4bde-b594-c3fe971da650",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit_search",
+      "targets": [
+        ["name=submit_search", "name"],
+        ["css=.button-search", "css:finder"],
+        ["xpath=//button[@name='submit_search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2209a4d-3e65-41b0-8ff2-47247b8629bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@title='Printed Dress' and @class='product_img_link']/ancestor::li[contains(@class,'last-item-of-tablet-line')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2e16559-c02c-46c6-a850-8ee1afe34ed4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax_block_product:nth-child(2) .button:nth-child(1) > span",
+      "targets": [
+        ["css=.ajax_block_product:nth-child(2) .button:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='center_column']/ul/li[2]/div/div[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div[2]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d514d4e7-249f-48a0-acf8-c3291d8132df",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aec983a7-751f-4268-85f0-46194ed30e7e"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
